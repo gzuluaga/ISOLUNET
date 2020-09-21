@@ -21,14 +21,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => ['role:super-admin']], function() {
 	
-Route::get('/administracion_usuarios', [App\Http\Controllers\Usuarios\UsuariosController::class, 'index'])->name('admin_users');
-Route::post('/store_usuarios', [App\Http\Controllers\Usuarios\UsuariosController::class, 'store'])->name('store_users');
-Route::get('/edit_usuarios/{id}', [App\Http\Controllers\Usuarios\UsuariosController::class, 'edit'])->name('edit_users');
-Route::post('/update_usuarios/{id}', [App\Http\Controllers\Usuarios\UsuariosController::class, 'update'])->name('update_users');
-Route::get('/delete_usuarios/{id}', [App\Http\Controllers\Usuarios\UsuariosController::class, 'destroy'])->name('delete_users');
+Route::get('/administracion_usuarios', 'Usuarios\UsuariosController@index')->name('admin_users');
+Route::post('/store_usuarios', 'Usuarios\UsuariosController@store')->name('store_users');
+Route::get('/edit_usuarios/{id}', 'Usuarios\UsuariosController@edit')->name('edit_users');
+Route::post('/update_usuarios/{id}', 'Usuarios\UsuariosController@update')->name('update_users');
+Route::get('/delete_usuarios/{id}', 'Usuarios\UsuariosController@destroy')->name('delete_users');
 
 });
