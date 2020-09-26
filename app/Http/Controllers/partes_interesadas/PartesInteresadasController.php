@@ -39,16 +39,18 @@ class PartesInteresadasController extends Controller
         if ($request) {
 
 
-            $formimpacto = Calificaciones::where('tipopa','=','Impacto')
+            $formimpacto = Calificaciones::where('tipo','=','Impacto')
                                          ->where('id_calificaciones','=','1')->first();
             
-            $forminfluencia = Calificaciones::where('tipopa','=','Influencia')
+            $forminfluencia = Calificaciones::where('tipo','=','Influencia')
                                             ->where('id_calificaciones','=','2')->first(); 
-            $cont = 0;
+            $cont = 1;
 
-            $partes_interesadas = DB::table('tbl_partei_master')
+            $partes_interesadas = DB::table('tbl_partei_master as tpm')
+                                    ->join('tbl_empresa as te','tpm.fk_empresa','=','te.id_empresa')
                                     ->where('fk_empresa','=',''.Auth::User()->fk_empresa.'')
                                     ->get();
+
             
             return view('pages.partes_interesadas.index',[
                 'formimpacto'               => $formimpacto,
@@ -189,7 +191,7 @@ class PartesInteresadasController extends Controller
              alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');
         }
 
-        return redirect::to('pi_calificaciones');
+        return redirect::to('pi_calificaciones')->with('status','Se Creo Correctamente');
     }
 
     public function impacto_update(Request $request,$id)
@@ -217,7 +219,7 @@ class PartesInteresadasController extends Controller
              alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');
         }
 
-        return redirect::to('pi_calificaciones');
+        return redirect::to('pi_calificaciones')->with('status','Se Creo Correctamente');
     }
 
     public function influencia(Request $request)
@@ -246,7 +248,7 @@ class PartesInteresadasController extends Controller
              alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');
         }
 
-        return redirect::to('pi_calificaciones');
+        return redirect::to('pi_calificaciones')->with('status','Se Creo Correctamente');
     }
 
     public function influencia_update(Request $request,$id)
@@ -274,7 +276,7 @@ class PartesInteresadasController extends Controller
              alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');
         }
 
-        return redirect::to('pi_calificaciones');
+        return redirect::to('pi_calificaciones')->with('status','Se Actualizo Correctamente');
     }
 
 
@@ -297,6 +299,6 @@ class PartesInteresadasController extends Controller
              alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');
         }
 
-        return redirect::to('partes_interesadas');
+        return redirect::to('partes_interesadas')->with('status','Se Creo Correctamente');
     }
 }

@@ -36,6 +36,7 @@
 <br>
 
 <div class="row">
+  @include('partials.message_flash')
 	<div class="col-sm-6">
 	  <a title="Dar Click" data-toggle="modal" data-target="#impacto">
       <div class="tx-center pd-y-15 bd">
