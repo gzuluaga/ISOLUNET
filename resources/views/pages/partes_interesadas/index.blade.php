@@ -19,7 +19,7 @@
 
 <div class="br-pagebody">
   <div class="br-section-wrapper">
-	
+	@include('partials.message_flash')
   	 <div class="row">
 	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	        @if (count($errors) > 0)
@@ -37,6 +37,7 @@
 <br>
 
 <div class="row">
+	
 	<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
 		<p>Criterio de calificación Impacto (Impacto en la capacidad de la organización para proporcionar productos y servicios que cumplan los requisitos)</p>
 	</div>
