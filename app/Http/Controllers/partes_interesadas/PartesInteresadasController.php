@@ -44,11 +44,13 @@ class PartesInteresadasController extends Controller
             
             $forminfluencia = Calificaciones::where('tipo','=','Influencia')
                                             ->where('id_calificaciones','=','2')->first(); 
-            $cont = 0;
+            $cont = 1;
 
-            $partes_interesadas = DB::table('tbl_partei_master')
+            $partes_interesadas = DB::table('tbl_partei_master as tpm')
+                                    ->join('tbl_empresa as te','tpm.fk_empresa','=','te.id_empresa')
                                     ->where('fk_empresa','=',''.Auth::User()->fk_empresa.'')
                                     ->get();
+
             
             return view('pages.partes_interesadas.index',[
                 'formimpacto'               => $formimpacto,

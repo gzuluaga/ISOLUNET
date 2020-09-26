@@ -186,7 +186,123 @@
 	   		</thead>
 	   		<tbody>
 	   			<tr>
-	   				
+	   				@foreach ($table_partes_interesadas as $element)
+	   					@if ($element->impacto >= 3 && $element->influencia >= 2 )
+	   						<tr>
+			   					<th>{{ $cont++ }}</th>
+			   					<th>{{ $element->Partes_interesadas }}</th>
+			   					<th>
+			   						<center>
+			   						<a class="btn btn-success" style="color: #FFFFFF"  data-toggle="modal" data-target="#necesidad{{ $element->id_partei_master }}" >+</a>
+			   						</center>
+			   					</th>
+			   					<th>
+			   						<center>
+			   						<a class="btn btn-success" style="color: #FFFFFF" data-toggle="modal" data-target="#expectativa{{ $element->id_partei_master }}" >+</a>
+			   						</center>
+			   					</th>
+			   					<th>
+			   						<center>
+			   						<a class="btn btn-success" style="color: #FFFFFF" data-toggle="modal" data-target="#estrategia{{ $element->id_partei_master }}" >+</a>
+			   						</center>
+			   					</th>
+			   					<th>
+			   						<center>
+			   						<a class="btn btn-success" style="color: #FFFFFF" data-toggle="modal" data-target="#medicion{{ $element->id_partei_master }}" >+</a>
+			   						</center>
+			   					</th>
+			   					<th>
+			   						{{ $element->razon_social }}
+			   					</th>
+			   				</tr>
+
+<!-- Modal -->
+<div class="modal fade" id="necesidad{{ $element->id_partei_master }}"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Necesidad</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="expectativa{{ $element->id_partei_master }}"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Expectativa</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="estrategia{{ $element->id_partei_master }}"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Estrategia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="medicion{{ $element->id_partei_master }}"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Medicion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	   					@endif	   					
+		   			@endforeach
 	   			</tr>
 	   		</tbody>
 	  	</table>
@@ -195,12 +311,17 @@
 		</div>
 	</div>
 </div>
+
+
 @endsection
 
 
 @push('scripts')
 <script src="{{ asset('backend/vendors/Chart.js/dist/Chart.bundle.js') }}"></script>
    <script>
+
+
+
         var DEFAULT_DATASET_SIZE = 7;
 
         var addedCount = 0;
