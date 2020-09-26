@@ -35,6 +35,7 @@
 	</div>
 
 <br>
+@include('partials.message_flash')
 {{  Form::open(['action' => ['Parametrizacion\EmpresaController@update',$empresa->id_empresa],'autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 {!! Form::token() !!}
 
@@ -91,7 +92,6 @@
 			    			@if($element->id == $empresa->fk_usuario)
 			    			<option value="{{ $element->id }}" selected>{{ $element->name }}</option>
 			    			@else
-			    			<option value="" selected>Seleccionar...</option>
 			    			<option value="{{ $element->id }}">{{ $element->name }}</option>
 			    			@endif
 			    		@endforeach

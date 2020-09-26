@@ -34,6 +34,7 @@
 		</div>
 
 		<br>
+		@include('partials.message_flash')
 		{{  Form::open(['action' => ['Parametrizacion\AreasCargoController@update_cargos',$cargos->id_cargo],'autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 		{!! Form::token() !!}
 

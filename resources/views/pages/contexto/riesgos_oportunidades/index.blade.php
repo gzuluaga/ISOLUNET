@@ -35,6 +35,7 @@
 
 <p>Una vez identificadas las fortalezas, debilidades, oportunidades y amenazas, se identificaron los riesgos y oportunidades estratégicas las cuales se describen a continuación:</p>
 <br>
+@include('partials.message_flash')
 	{{  Form::open(['action' => 'Contexto\RiesgoOportunidadesController@store','autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 	{!! Form::token() !!}
 <div class="table-responsive">

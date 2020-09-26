@@ -34,6 +34,7 @@
 		</div>
 
 		<br>
+		@include('partials.message_flash')
 		{{  Form::open(['action' => 'Parametrizacion\AreasCargoController@store_cargos','autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 		{!! Form::token() !!}
 

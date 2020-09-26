@@ -35,6 +35,7 @@
 	</div>
 
 <br>
+@include('partials.message_flash')
 {{  Form::open(['action' => ['Parametrizacion\SistemaGestionController@update',$registro->id_sisgestion],'autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 {!! Form::token() !!}
 

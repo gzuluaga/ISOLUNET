@@ -19,7 +19,7 @@
 
 <div class="br-pagebody">
   <div class="br-section-wrapper">
-	
+	@include('partials.message_flash')
   	<h1>No perteneces a ninguna Empresa, por favor comunicarse con el Administrador.</h1> 
 
   </div>

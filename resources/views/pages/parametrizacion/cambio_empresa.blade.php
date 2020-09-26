@@ -34,6 +34,7 @@
 		</div>
 
 		<br>
+		@include('partials.message_flash')
 		{{  Form::open(['action' => 'Parametrizacion\UsuariosController@mover_usuario','autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 		{!! Form::token() !!}
 		<div class="row">

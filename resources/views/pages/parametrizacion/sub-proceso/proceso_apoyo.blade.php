@@ -34,6 +34,7 @@
 	</div>
 
 		<br>
+		@include('partials.message_flash')
 		{{  Form::open(['action' => 'Parametrizacion\ProcesosController@store_apoyo','autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 		{!! Form::token() !!}
 

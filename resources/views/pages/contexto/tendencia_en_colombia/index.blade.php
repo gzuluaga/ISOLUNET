@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		<br>
-
+@include('partials.message_flash')
 	@if(count($validacion) == 0)
 		{{  Form::open(['action' => 'Contexto\TendeciasController@store','autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 		{!! Form::token() !!}

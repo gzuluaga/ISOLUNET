@@ -11,7 +11,7 @@
 
 <div class="br-pagebody pd-x-20 pd-sm-x-30"> 	
 	<div class="row row-sm mg-t-20">
-
+@include('partials.message_flash')
 	 <div class="col-lg-6">
 	    <div class="card shadow-base card-body pd-25 bd-0" style="height: 100%;">
 	      <div class="row">

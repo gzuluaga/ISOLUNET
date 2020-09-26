@@ -41,6 +41,7 @@
 
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
+      
       @yield('content') 
 
 

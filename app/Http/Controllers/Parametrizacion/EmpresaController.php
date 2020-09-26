@@ -14,7 +14,6 @@ use Validator;
 use Carbon\Carbon;
 use Response;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -56,8 +55,8 @@ class EmpresaController extends Controller
             $empresa->direccion			= $request->get('direccion');
             $empresa->celular			= $request->get('celular');
             
-            if (Input::hasFile('image')){
-                $file=Input::file('image');
+            if ($request->hasFile('image')){
+                $file=  $request->file('image');
                 $file->move(public_path().'/imgs/logo_empresa/',$file->getClientOriginalName());
                 $empresa->image =$file->getClientOriginalName();
             }
@@ -98,8 +97,8 @@ class EmpresaController extends Controller
             $empresa->direccion			= $request->get('direccion');
             $empresa->celular			= $request->get('celular');
             
-            if (Input::hasFile('image')){
-                $file=Input::file('image');
+            if ($request->hasFile('image')){
+                $file= $request->file('image');
                 $file->move(public_path().'/imgs/logo_empresa/',$file->getClientOriginalName());
                 $empresa->image =$file->getClientOriginalName();
             }

@@ -19,6 +19,7 @@
 
 <div class="br-pagebody">
   <div class="br-section-wrapper">
+  	@include('partials.message_flash')
 {{  Form::open(['action' => ['Parametrizacion\OrigenanomaliaController@edit',$anomalia->id_origen_anomalia],'autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 {!! Form::token() !!}
 		<div class="row">

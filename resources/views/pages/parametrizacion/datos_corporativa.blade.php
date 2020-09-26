@@ -35,6 +35,7 @@
 	</div>
 
 <br>
+@include('partials.message_flash')
 {{  Form::open(['action' => 'Parametrizacion\DatosCorporativosController@store','autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 {!! Form::token() !!}
 

@@ -35,6 +35,7 @@
 	</div>
 
 <br>
+@include('partials.message_flash')
 		{{  Form::open(['action' => ['Parametrizacion\DocumentosController@update_documento',$documento->id_documento],'autocomplete'=>'off', 'method' => 'POST', 'files' => true]) }}
 		{!! Form::token() !!}
 
