@@ -50,8 +50,6 @@ class DatosCorporativosController extends Controller
 		    				->where('bool_estado','=','1')
 		    				->first();
 
-                // dd($empresa);
-
     			$datos_corporativos_count = DB::table('tbl_datos_corporativos')
     								->where('fk_empresa','=',''.$empresa->id_empresa.'')
     								->get();

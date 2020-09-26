@@ -135,4 +135,24 @@ class SistemaGestionController extends Controller
 
         return Redirect::to('parm_sistema_gestion')->with('status','Se actualizó correctamente');
     }
+
+    public function destroy(Request $request,$id)
+    {
+        try {
+            DB::beginTransaction();
+
+            $sisgestion = Sistema_gestion::findOrfail($id);
+            $sisgestion->bool_estado = '0';
+            $sisgestion->update();
+
+            DB::commit();
+            alert()->success('Se ha eliminado correctamente.', 'Eliminado!')->persistent('Cerrar');
+        
+        } catch (Exception $e) {
+            DB::rollback();
+            alert()->error('Ha ocurrdio un error tratando de eliminar el proceso.', 'Error!')->persistent('Cerrar');            
+        }
+
+        return Redirect::to('parm_sistema_gestion')->with('status','Se eliminó correctamente');
+    }
 }

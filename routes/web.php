@@ -104,12 +104,19 @@ Route::get('parm_eliminar_sistema_gestion/{id}', 'Parametrizacion\SistemaGestion
 Route::get('parm_usuarios_camb', 'Parametrizacion\UsuariosController@cambio_usuario');
 Route::post('parm_usuarios_camb_update', 'Parametrizacion\UsuariosController@mover_usuario');
 
-// Parametrizacion origen Anomaliza
+// Parametrizacion origen Anomalía
 Route::get('parm_origen_anomalia', 'Parametrizacion\OrigenanomaliaController@origen_anomalia');
 Route::get('view_parm_origen_anomalia/{id}', 'Parametrizacion\OrigenanomaliaController@edit_origen_anomalia');
 Route::post('store_parm_origen_anomalia', 'Parametrizacion\OrigenanomaliaController@store');
 Route::post('edit_parm_origen_anomalia/{id}', 'Parametrizacion\OrigenanomaliaController@edit');
 Route::get('delete_parm_origen_anomalia/{id}', 'Parametrizacion\OrigenanomaliaController@delete');
+
+// Parametrizacion Productos
+Route::get('parm_producto', 'Parametrizacion\ProductoController@index');
+Route::post('store_parm_producto', 'Parametrizacion\ProductoController@store');
+Route::post('edit_parm_producto/{id}', 'Parametrizacion\ProductoController@edit');
+Route::get('update_parm_producto/{id}', 'Parametrizacion\ProductoController@update');
+Route::get('delete_parm_producto/{id}', 'Parametrizacion\ProductoController@delete');
 
 // Menu contexto
 Route::get('contexto_index','Contexto\ContextoController@index');

@@ -65,7 +65,7 @@ class ProcesosController extends Controller
             
 
 
-            if (!Entrust::hasRole('superadministrador')) {}
+            //if (!Entrust::hasRole('superadministrador')) {}
 
             return view('pages.parametrizacion.sub-proceso.proceso_gerenciales',
                         [
@@ -98,7 +98,7 @@ class ProcesosController extends Controller
                                     ->where('pm.bool_estado',  '=','1')
                                     ->orderby('id_proceso', 'DESC')->get();
 
-            if (Entrust::hasRole('superadministrador')) {}
+            //if (Entrust::hasRole('superadministrador')) {}
 
             return view('pages.parametrizacion.sub-proceso.proceso_misionales',
                         [
@@ -131,7 +131,7 @@ class ProcesosController extends Controller
                                     ->where('pa.bool_estado',  '=','1')
                                     ->orderby('id_proceso', 'DESC')->get();
 
-            if (Entrust::hasRole('superadministrador')) {
+            //if (Entrust::hasRole('superadministrador')) {
 
             }
             return view('pages.parametrizacion.sub-proceso.proceso_apoyo',
@@ -141,7 +141,7 @@ class ProcesosController extends Controller
                             'proceso_apoyo'          => $proceso_apoyo
                         ]);
         }
-    }
+    
 //################ Store de los 3 procesos //################
 
     //################ GERENCIALES//################
@@ -350,7 +350,7 @@ class ProcesosController extends Controller
             
         }
 
-        return Redirect::to('parm_proceso_gerenciales');
+        return Redirect::to('parm_proceso_gerenciales')->with('status','Se actualizó correctamente');
     }
     //################ MISIONAL//################
     public function update_proceso_misional(Request $request,$id)
@@ -441,7 +441,7 @@ class ProcesosController extends Controller
             alert()->error('Ha ocurrdio un error tratando de eliminar el proceso.', 'Error!')->persistent('Cerrar');            
         }
 
-        return Redirect::to('parm_proceso_gerenciales')->with('status','Se actualizó correctamente');
+        return Redirect::to('parm_proceso_gerenciales')->with('status','Se eliminó correctamente');
     }
     //################ MISIONAL//################
     public function destroy_proceso_misional(Request $request,$id)
