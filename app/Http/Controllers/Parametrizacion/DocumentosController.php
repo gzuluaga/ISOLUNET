@@ -65,7 +65,7 @@ class DocumentosController extends Controller
 
             DB::commit();
             alert()->success('Se ha creado correctamente.', 'Creado!')->persistent('Cerrar');
-            return Redirect::to('parm_documento_index');
+            return Redirect::to('parm_documento_index')->with('status','Se guardó correctamente');
         } 
         catch (Exception $e) 
         {
@@ -111,7 +111,7 @@ class DocumentosController extends Controller
             
         }
 
-        return Redirect::to('parm_documento_index');
+        return Redirect::to('parm_documento_index')->with('status','Se actualizó correctamente');
     }
 
     public function destroy_documento(Request $request,$id)
@@ -131,6 +131,6 @@ class DocumentosController extends Controller
             alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');            
         }
 
-        return Redirect::to('parm_documento_index');
+        return Redirect::to('parm_documento_index')->with('status','Se eliminó correctamente');
     }
 }

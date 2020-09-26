@@ -60,17 +60,16 @@ class EmpresaController extends Controller
                 $file->move(public_path().'/imgs/logo_empresa/',$file->getClientOriginalName());
                 $empresa->image =$file->getClientOriginalName();
             }
-            $empresa->bool_estado			= 1;
+            $empresa->bool_estado		= 1;
             $empresa->fk_usuario		= $request->get('fk_usuario');
             $empresa->save();
 
-            $usuarios               = User::findOrfail($request->get('fk_usuario'));
-            $usuarios->fk_empresa   = $empresa->id_empresa;
+            $usuarios                   = User::findOrfail($request->get('fk_usuario'));
+            $usuarios->fk_empresa       = $empresa->id_empresa;
             $usuarios->update(); 
 
            DB::commit();
-           alert()->success('Se ha creado correctamente.', 'Creado!')->persistent('Cerrar');
-           return Redirect::to('parm_empresa');
+           return Redirect::to('parm_empresa')->with('status','Se guardó correctamente');
         } catch (Exception $e) {
             DB::rollback();
         }
@@ -78,8 +77,8 @@ class EmpresaController extends Controller
 
     public function edit($id)
     {
-    	$empresa = Empresa::where('id_empresa','=',$id)->firstOrfail();
-    	$usuarios = DB::table('users')
+    	$empresa    = Empresa::where('id_empresa','=',$id)->firstOrfail();
+    	$usuarios   = DB::table('users')
     					->get();
 
     	return view('pages.parametrizacion.edit_empresa',['empresa'=>$empresa,'usuarios'=>$usuarios]);
@@ -107,8 +106,7 @@ class EmpresaController extends Controller
             $empresa->update();
 
            DB::commit();
-           alert()->success('Se ha Actualizo correctamente.', 'Actualizado!')->persistent('Cerrar');
-           return Redirect::to('parm_empresa');
+           return Redirect::to('parm_empresa')->with('status','Se actualizó correctamente');
         } catch (Exception $e) {
             DB::rollback();
         }
@@ -124,8 +122,7 @@ class EmpresaController extends Controller
             $empresa->update();
 
            DB::commit();
-           alert()->warning('Se ha Elimino correctamente.', 'Eliminado!')->persistent('Cerrar');
-           return Redirect::to('parm_empresa');
+           return Redirect::to('parm_empresa')->with('status','Se eliminó correctamente');
         } catch (Exception $e) {
             DB::rollback();
         }

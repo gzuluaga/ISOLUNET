@@ -91,7 +91,7 @@ class DatosCorporativosController extends Controller
 
 	           DB::commit();
 	           alert()->success('Se ha creado correctamente.', 'Creado!')->persistent('Cerrar');
-	           return Redirect::to('parm_datos_corportativo')->with('status','Se Creo Correctamente');
+	           return Redirect::to('parm_datos_corportativo')->with('status','Se guardó correctamente');
 	        } catch (Exception $e) {
 	            DB::rollback();
 	        }
@@ -110,7 +110,7 @@ class DatosCorporativosController extends Controller
 
 	           DB::commit();
 	           alert()->success('Se ha Actualizado correctamente.', 'Actualizado!')->persistent('Cerrar');
-	           return Redirect::to('parm_datos_corportativo')->with('status','Se Modifico Correctamente');
+	           return Redirect::to('parm_datos_corportativo')->with('status','Se actualizó correctamente');
 	        } catch (Exception $e) {
 	            DB::rollback();
 	        }

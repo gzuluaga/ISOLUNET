@@ -89,7 +89,7 @@ class SistemaGestionController extends Controller
             DB::rollback();
             alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');            
         }
-        return Redirect::to('parm_sistema_gestion');
+        return Redirect::to('parm_sistema_gestion')->with('status','Se guardó correctamente');
     }
 
     public function edit(Request $request, $id)
@@ -133,6 +133,6 @@ class SistemaGestionController extends Controller
             
         }
 
-        return Redirect::to('parm_sistema_gestion');
+        return Redirect::to('parm_sistema_gestion')->with('status','Se actualizó correctamente');
     }
 }
