@@ -114,9 +114,9 @@ Route::get('delete_parm_origen_anomalia/{id}', 'Parametrizacion\OrigenanomaliaCo
 // Parametrizacion Productos
 Route::get('parm_producto', 'Parametrizacion\ProductoController@index');
 Route::post('store_parm_producto', 'Parametrizacion\ProductoController@store');
-Route::post('edit_parm_producto/{id}', 'Parametrizacion\ProductoController@edit');
-Route::get('update_parm_producto/{id}', 'Parametrizacion\ProductoController@update');
-Route::get('delete_parm_producto/{id}', 'Parametrizacion\ProductoController@delete');
+Route::get('edit_parm_producto/{id}', 'Parametrizacion\ProductoController@edit');
+Route::post('update_parm_producto/{id}', 'Parametrizacion\ProductoController@update');
+Route::get('delete_parm_producto/{id}', 'Parametrizacion\ProductoController@destroy');
 
 // Menu contexto
 Route::get('contexto_index','Contexto\ContextoController@index');

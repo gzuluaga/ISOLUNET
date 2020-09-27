@@ -4,21 +4,16 @@ namespace App\Models\Parametrizacion;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Empresa extends Model
+class Producto extends Model
 {
-    protected $table 		= 'tbl_empresa';
-    protected $primaryKey   = 'id_empresa';
+    protected $table 		= 'tbl_producto';
+    protected $primaryKey   = 'id_producto';
     public $timestamps 		= true;
 
     protected 	$fillable = [
-        'razon_social',
-        'nit', 
-        'representante',           
-        'direccion',           
-        'celular',           
-        'image',
+        'str_producto',
+        'str_imagen',
         'bool_estado', 
         'fk_usuario',          
     ];
-
 }
