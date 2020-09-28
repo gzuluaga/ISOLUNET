@@ -7,6 +7,7 @@
 
     <!-- vendor css -->
     @include('layouts.assets.head')
+    @stack('css')
   </head>
 
 <body class="{{ !empty($body_class) ? $body_class : '' }}">

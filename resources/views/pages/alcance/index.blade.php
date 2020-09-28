@@ -18,36 +18,42 @@
 	  	<div class="row">
 	  		<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
 	  			<div class="row">
-	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">
-	  					<h4>procesos y limites</h4>
-	  					<ul>
-	  						<li>Gestion Gerencial</li>
-	  						<li>Gestion Gerencial</li>
-	  						<li>Gestion Gerencial</li>
-	  						<li>Gestion Gerencial</li>
-	  						<li>Gestion Gerencial</li>
-	  					</ul>
+	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12" id="card-font">
+	  					<div class="card">
+						  <h5 class="card-header" style="background: #1F0182; color: #FFFFFF;">Proceso y Limites</h5>
+						  <div class="card-body">
+						    	<ul>
+			  						<li>Proceso y Limites</li>
+			  						<li>Proceso y Limites</li>
+			  						<li>Proceso y Limites</li>
+			  						<li>Proceso y Limites</li>
+			  						<li>Proceso y Limites</li>
+			  					</ul>
+						  </div>
+						</div>
 	  				</div>
 	  				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
 	  				</div>
-	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">
-	  					<h4>Producto</h4>
-	  					<ul>
-	  						<li>Productos</li>
-	  						<li>Productos</li>
-	  						<li>Productos</li>
-	  						<li>Productos</li>
-	  						<li>Productos</li>
-	  					</ul>
+	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12" id="card-font">
+	  					<div class="card">
+						  <h5 class="card-header" style="background: #1F0182; color: #FFFFFF;">Producto</h5>
+						  <div class="card-body">
+						    	<ul>
+			  						<li>Azucar</li>
+			  						<li>Cal</li>
+			  						<li>Sulfato</li>
+			  						<li>producto</li>
+			  					</ul>
+						  </div>
+						</div>	
 	  				</div>
 	  			</div>
 	  			<div class="row">
 	  				<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
 	  					<div class="row">
-	  						<div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
-	  						</div>
-	  						<div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
-	  							<img src="{{ asset('img/llave.png') }}" alt="" style="z-index: 2" width="100" height="300">
+	  						
+	  						<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+	  							<img src="{{ asset('img/imagen1.svg') }}" alt="" width="300" height="300">
 	  						</div>
 	  						<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
 	  							<h5>Alcance del SGC</h5>
@@ -59,36 +65,43 @@
 	  							<br>
 	  							<textarea name="" id="" rows="3" class="form-control"></textarea>
 	  						</div>
-	  						<div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
-	  							<img src="{{ asset('img/llaveder.png') }}" alt="" style="z-index: 2" width="100" height="300">
-	  						</div>
-	  						<div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
+	  						<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+	  							<img src="{{ asset('img/imagen2.svg') }}" alt="" width="300" height="300">
 	  						</div>
 	  					</div>
 	  				</div>
 	  			</div>
 	  			<div class="row">
-	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">
-	  					<h4>Entorno</h4>
-	  					<ul>
-	  						<li>Gestion</li>
-	  						<li>Gestion</li>
-	  						<li>Gestion</li>
-	  						<li>Gestion</li>
-	  						<li>Gestion</li>
-	  					</ul>
+	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12" id="card-font">
+
+	  					<div class="card">
+						  <h5 class="card-header" style="background: #1F0182; color: #FFFFFF;">Entorno</h5>
+						  <div class="card-body">
+						    	<ul>
+			  						<li>Gestion</li>
+			  						<li>Gestion</li>
+			  						<li>Gestion</li>
+			  						<li>Gestion</li>
+			  						<li>Gestion</li>
+			  					</ul>
+						  </div>
+						</div>	  					
 	  				</div>
 	  				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
 	  				</div>
-	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">
-	  					<h4>Partes Interesadas</h4>
-	  					<ul>
-	  						<li>Partes Interesadas</li>
-	  						<li>Partes Interesadas</li>
-	  						<li>Partes Interesadas</li>
-	  						<li>Partes Interesadas</li>
-	  						<li>Partes Interesadas</li>
-	  					</ul>
+	  				<div class="col-sm-3 col-md-3 col-lg-3 col-xs-12" id="card-font">
+	  					<div class="card">
+						  <h5 class="card-header" style="background: #1F0182; color: #FFFFFF;">Partes Interesadas</h5>
+						  <div class="card-body">
+						    	<ul>
+			  						<li>Partes Interesadas</li>
+			  						<li>Partes Interesadas</li>
+			  						<li>Partes Interesadas</li>
+			  						<li>Partes Interesadas</li>
+			  						<li>Partes Interesadas</li>
+			  					</ul>
+						  </div>
+						</div>	  	
 	  				</div>
 	  			</div>
 	  		</div>
@@ -98,5 +111,15 @@
 </div>
 @endsection
 @push('scripts')
-</script>
 @endpush 
+@push('css')
+<style>
+	#card-font{
+		-webkit-box-shadow: 20px 17px 15px -8px rgba(128,128,128,1);
+		-moz-box-shadow: 20px 17px 15px -8px rgba(128,128,128,1);
+		box-shadow: 20px 17px 15px -8px rgba(128,128,128,1);
+		padding-right: 0px;
+	}
+</style>
+@endpush 
+
