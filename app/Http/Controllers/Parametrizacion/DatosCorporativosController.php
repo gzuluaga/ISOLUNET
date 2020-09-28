@@ -50,8 +50,6 @@ class DatosCorporativosController extends Controller
 		    				->where('bool_estado','=','1')
 		    				->first();
 
-                // dd($empresa);
-
     			$datos_corporativos_count = DB::table('tbl_datos_corporativos')
     								->where('fk_empresa','=',''.$empresa->id_empresa.'')
     								->get();
@@ -91,7 +89,7 @@ class DatosCorporativosController extends Controller
 
 	           DB::commit();
 	           alert()->success('Se ha creado correctamente.', 'Creado!')->persistent('Cerrar');
-	           return Redirect::to('parm_datos_corportativo')->with('status','Se Creo Correctamente');
+	           return Redirect::to('parm_datos_corportativo')->with('status','Se guardó correctamente');
 	        } catch (Exception $e) {
 	            DB::rollback();
 	        }
@@ -110,7 +108,7 @@ class DatosCorporativosController extends Controller
 
 	           DB::commit();
 	           alert()->success('Se ha Actualizado correctamente.', 'Actualizado!')->persistent('Cerrar');
-	           return Redirect::to('parm_datos_corportativo')->with('status','Se Modifico Correctamente');
+	           return Redirect::to('parm_datos_corportativo')->with('status','Se actualizó correctamente');
 	        } catch (Exception $e) {
 	            DB::rollback();
 	        }

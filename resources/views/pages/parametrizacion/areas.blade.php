@@ -44,11 +44,8 @@
 			<div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
 				<div class="form-group">
 			    	<label for="datos">Empresa</label>
-			    	<select name="empresa" class="form-control select2" required>
-			    				    		
-			    		<option value="{{ $empresa->id_empresa }}" selected>{{ $empresa->razon_social }}</option>	
-			 
-			    
+			    	<select name="empresa" class="form-control select2" required>			    				    		
+			    		<option value="{{ $empresa->id_empresa }}" selected>{{ $empresa->razon_social }}</option>				 			    
 			    	</select>
 				</div>
 			</div>

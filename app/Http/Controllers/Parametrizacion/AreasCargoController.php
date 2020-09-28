@@ -65,15 +65,13 @@ class AreasCargoController extends Controller
 
 
             DB::commit();
-            alert()->success('Se ha creado correctamente.', 'Creado!')->persistent('Cerrar');
         
         } catch (Exception $e) {
             DB::rollback();
-            alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');
             
         }
 
-        return Redirect::to('parm_areas');
+        return Redirect::to('parm_areas')->with('status','Se guardó correctamente');
     }
 
     public function edit_areas(Request $request,$id)
@@ -109,8 +107,7 @@ class AreasCargoController extends Controller
             alert()->error('Se ha Presentador un error.', 'Error!')->persistent('Cerrar');
             
         }
-
-        return Redirect::to('parm_areas');
+        return Redirect::to('parm_areas')->with('status','Se actualizó correctamente');
     }
 
     public function destroy(Request $request,$id)
@@ -132,7 +129,7 @@ class AreasCargoController extends Controller
             
         }
 
-        return Redirect::to('parm_areas');
+        return Redirect::to('parm_areas')->with('status','Se eliminó correctamente');
     }
 
 // Controlador Cargos
@@ -182,7 +179,7 @@ class AreasCargoController extends Controller
             
         }
 
-        return Redirect::to('parm_cargo');
+        return Redirect::to('parm_cargo')->with('status','Se guardó correctamente');
     }
 
     public function edit_cargo(Request $request,$id)
@@ -217,7 +214,7 @@ class AreasCargoController extends Controller
             
         }
 
-        return Redirect::to('parm_cargo');
+        return Redirect::to('parm_cargo')->with('status','Se actualizó correctamente');
     }
 
     public function destroy_cargos(Request $request,$id)
@@ -239,7 +236,7 @@ class AreasCargoController extends Controller
             
         }
 
-        return Redirect::to('parm_cargo');
+        return Redirect::to('parm_cargo')->with('status','Se elimiinó correctamente');
     }
 
 }

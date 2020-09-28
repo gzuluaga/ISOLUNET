@@ -63,7 +63,7 @@ class OrigenanomaliaController extends Controller
 
         }
 
-        return Redirect::to('parm_origen_anomalia');
+        return Redirect::to('parm_origen_anomalia')->with('status','Se guardó correctamente');
     }
 
     public function edit_origen_anomalia(Request $request, $id)
@@ -102,7 +102,7 @@ class OrigenanomaliaController extends Controller
 
         }
 
-        return Redirect::to('parm_origen_anomalia');
+        return Redirect::to('parm_origen_anomalia')->with('status','Se actualizó correctamente');
     }
 
     public function delete(Request $request,$id)
@@ -123,7 +123,7 @@ class OrigenanomaliaController extends Controller
 
         }
 
-        return Redirect::to('parm_origen_anomalia');
+        return Redirect::to('parm_origen_anomalia')->with('status','Se eliminó correctamente');
     }
 
 

@@ -81,7 +81,7 @@ class UsuariosController extends Controller
             DB::rollback();
             alert()->success('Ha ocurrido un error tratando de Guardar.', 'Guardado!')->persistent('Cerrar');
         }
-        return Redirect::to('parm_usuarios');
+        return Redirect::to('parm_usuarios')->with('status','Se guardó correctamente');
     }
 
     public function cambio_usuario(Request $request)
@@ -120,6 +120,6 @@ class UsuariosController extends Controller
             DB::rollback();
             alert()->success('Ha ocurrido un error tratando de asignar', 'Creado!')->persistent('Cerrar');
         }
-        return Redirect::to('parm_usuarios_camb');
+        return Redirect::to('parm_usuarios_camb')->with('status','Se actualizó correctamente');
     }
 }
