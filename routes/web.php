@@ -158,6 +158,12 @@ Route::post('pi_calificaciones_influ','partes_interesadas\PartesInteresadasContr
 Route::post('pi_calificaciones_influ/{id}','partes_interesadas\PartesInteresadasController@influencia_update');
 Route::post('pi_calificaciones_form_pa','partes_interesadas\PartesInteresadasController@form_partes');
 
+// Mapa de proceso 
+Route::get('mapa_proceso', function () {
+    return view('pages.contexto.mapa_procesos.mapa_procesos');
+});
+
+
 // alcance
 Route::get('alcance','alcance\AlcanceController@index');
 // mejora
@@ -181,4 +187,15 @@ Route::get('indicadores','sgto_medicion\IndicadoresController@index');
 Route::post('indicadores','sgto_medicion\IndicadoresController@store');
 Route::post('indicadores/{id}','sgto_medicion\IndicadoresController@update');
 Route::post('indicadores/{id}','sgto_medicion\IndicadoresController@destroy');
+
+
+// Menu liderazgo 
+// presupuesto
+Route::get('presupuesto', function () {
+    return view('pages.liderazgo.presupuesto');
+});
+// politica
+Route::get('politica', function () {
+    return view('pages.liderazgo.politica');
+});
 
