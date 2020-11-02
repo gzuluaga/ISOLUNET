@@ -56,7 +56,7 @@
           </a><!-- br-menu-link -->
           <ul class="br-menu-sub">
             <li class="sub-item"><a href="{{ URL::to('politica') }}" class="sub-link">Politica</a></li>
-            <li class="sub-item"><a href="" class="sub-link">Matriz de Roles y Responsabilidades</a></li>
+            <li class="sub-item"><a href="" class="sub-link">Roles y Responsabilidades</a></li>
             {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li> --}}
             {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li> --}}
             {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li> --}}
@@ -69,45 +69,39 @@
             <i class="menu-item-icon  ion-clipboard tx-24"></i>
             <span class="menu-item-label">Planificacion</span>
           </a><!-- br-menu-link -->
-         {{--  <ul class="br-menu-sub">
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Entrevistas</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Matricula</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Llamadas de Atenciaon</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Hoja de Vida del Estudante</a></li>
-          </ul> --}}
+          <ul class="br-menu-sub">
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Matriz de Riesgos</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Objetivo e Indicadores</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Planificacion de Cambios</a></li>
+          </ul>
         </li><!-- br-menu-item -->
          <li class="br-menu-item">
           <a href="#" class="br-menu-link with-sub">
             <i class="menu-item-icon  ion-clipboard tx-24"></i>
             <span class="menu-item-label">Apoyo</span>
           </a><!-- br-menu-link -->
-         {{--  <ul class="br-menu-sub">
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Entrevistas</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Matricula</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Llamadas de Atenciaon</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Hoja de Vida del Estudante</a></li>
-          </ul> --}}
+          <ul class="br-menu-sub">
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Recursos</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Competencias</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Toma de Conciencia</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Comunicacion</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Informacion Documentada</a></li>
+          </ul>
         </li><!-- br-menu-item -->
          <li class="br-menu-item">
           <a href="#" class="br-menu-link with-sub">
             <i class="menu-item-icon  ion-clipboard tx-24"></i>
-            <span class="menu-item-label">Operacion</span>
+            <span class="menu-item-label">Planeacion</span>
           </a><!-- br-menu-link -->
-         {{--  <ul class="br-menu-sub">
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Entrevistas</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Matricula</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Llamadas de Atenciaon</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Hoja de Vida del Estudante</a></li>
-          </ul> --}}
+          <ul class="br-menu-sub">
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Planeacion y control</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Productos y Servicios</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Diseño y Desarrollo</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Producto y Servicios</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Produccion y Prevision</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Liberacion de los productos</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Salidas no Conformes</a></li>
+          </ul>
         </li><!-- br-menu-item -->
          <li class="br-menu-item">
           <a href="#" class="br-menu-link with-sub">
