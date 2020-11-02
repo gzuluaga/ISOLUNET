@@ -32,6 +32,7 @@
             <li class="sub-item"><a href="{{ URL::to('parm_usuarios_camb') }}" class="sub-link">Cambiar Usuario-Empresa</a></li>
             <li class="sub-item"><a href="{{ URL::to('parm_origen_anomalia') }}" class="sub-link">Origen de anomalÍa</a></li>
             <li class="sub-item"><a href="{{ URL::to('parm_producto') }}" class="sub-link">Productos</a></li>
+            <li class="sub-item"><a href="{{ URL::to('calificacion_proveedores') }}" class="sub-link">Calificacion Proveedor</a></li>
           
           </ul>
         </li>

@@ -118,6 +118,12 @@ Route::get('edit_parm_producto/{id}', 'Parametrizacion\ProductoController@edit')
 Route::post('update_parm_producto/{id}', 'Parametrizacion\ProductoController@update');
 Route::get('delete_parm_producto/{id}', 'Parametrizacion\ProductoController@destroy');
 
+// parametrizacion calificacion de proveedores
+Route::get('calificacion_proveedores', function () {
+    return view('pages.parametrizacion.calificacion_proveedor.calificacion_proveedor');
+});
+
+
 // Menu contexto
 Route::get('contexto_index','Contexto\ContextoController@index');
 

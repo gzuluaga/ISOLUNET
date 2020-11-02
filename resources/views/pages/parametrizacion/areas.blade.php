@@ -96,7 +96,7 @@
 			    		<td>{{ $h->nom_area }}</td>
 			    		<td><img src="{{asset('imgs/logo_empresa/'.$h ->image)}}" alt="{{$h ->image}}" height="100px" width="100px" class="img-thumbnail">  </td>
 			    		<td colspan="2">
-			    			<a href="{{ URL::action('Parametrizacion\AreasCargoController@edit_areas',$h->id_area) }}""><i class="fas fa-pencil-alt fa-2x" style="color:#18A4B4;"></i></a>&nbsp;
+			    			<a href="{{ URL::action('Parametrizacion\AreasCargoController@edit_areas',$h->id_area) }}"><i class="fas fa-pencil-alt fa-2x" style="color:#18A4B4;"></i></a>&nbsp;
 			    			<a href="{{ URL::action('Parametrizacion\AreasCargoController@destroy',$h->id_area) }}" ><i class="fas fa-trash-alt fa-2x" style="color:#C10000;"></i></a>
 			    		</td>
 			    	</tr>
