@@ -108,15 +108,11 @@
             <i class="menu-item-icon  ion-clipboard tx-24"></i>
             <span class="menu-item-label">Evaluacion Desempeño</span>
           </a><!-- br-menu-link -->
-         {{--  <ul class="br-menu-sub">
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Entrevistas</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Matricula</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Llamadas de Atenciaon</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Hoja de Vida del Estudante</a></li>
-          </ul> --}}
+          <ul class="br-menu-sub">
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Seguimiento Medicion</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Auditoria Interna</a></li>
+            <li class="sub-item"><a href="navigation.html" class="sub-link">Revision por la Direccion</a></li>
+          </ul>
         </li><!-- br-menu-item -->
          <li class="br-menu-item">
           <a href="#" class="br-menu-link with-sub">
