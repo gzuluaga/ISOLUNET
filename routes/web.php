@@ -200,6 +200,6 @@ Route::get('presupuesto', function () {
 });
 // politica
 Route::get('politica', function () {
-    return view('pages.liderazgo.politica');
+    return view('pages.liderazgo.politica.politica');
 });
 
