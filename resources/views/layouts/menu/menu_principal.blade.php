@@ -55,13 +55,13 @@
             <span class="menu-item-label">Liderazgo</span>
           </a><!-- br-menu-link -->
           <ul class="br-menu-sub">
-            <li class="sub-item"><a href="{{ URL::to('mapa_proceso') }}" class="sub-link">Politica</a></li>
-          {{--   <li class="sub-item"><a href="navigation.html" class="sub-link">Matricula</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Llamadas de Atenciaon</a></li>
-            <li class="sub-item"><a href="navigation.html" class="sub-link">Hoja de Vida del Estudante</a></li> --}}
+            <li class="sub-item"><a href="{{ URL::to('politica') }}" class="sub-link">Politica</a></li>
+            <li class="sub-item"><a href="" class="sub-link">Matriz de Roles y Responsabilidades</a></li>
+            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link">Llamadas de Atenciaon</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link">Hoja de Vida del Estudante</a></li> --}}
           </ul>
         </li><!-- br-menu-item -->
         <li class="br-menu-item">
