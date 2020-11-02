@@ -33,8 +33,9 @@
 		</div>
 
 		<br>
-		
-		<br>
+        @include('partials.message_flash')
+        {{  Form::open(['action' => 'Parametrizacion\AreasCargoController@store_areas','autocomplete'=>'off', 'metod' => 'POST', 'files' => true]) }}
+        {!! Form::token() !!}
 
 		<div class="row">
 			<div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
@@ -42,7 +43,7 @@
 			    	<label for="datos">Empresa</label>
 			    	<select name="fk_empresa" class="form-control select2">
 			    		<option value="">Seleccionar</option>			    		
-			    		<option value="{{ $empresa->id_empresa }}" selected>{{ $empresa->razon_social }}</option>			    		
+			    		<option value="" selected></option>			    		
 			    	</select>
 				</div>
 			</div>
@@ -81,8 +82,7 @@
 									</th>
 								</tr>			    	
 							</thead>
-							<tbody>
-								
+							<tbody>								
 								<tr>
 									<td>									
 										Empresas S.A.S										
@@ -91,11 +91,22 @@
                                         Proveedor 1                                    
                                     </td>									
 									<td colspan="2">
-										<a href="{{ URL::) }}""><i class="fas fa-pencil-alt fa-2x" style="color:#18A4B4;"></i></a>&nbsp;
-										<a href="{{ URL::) }}" ><i class="fas fa-trash-alt fa-2x" style="color:#C10000;"></i></a>
+										<a href="""><i class="fas fa-pencil-alt fa-2x" style="color:#18A4B4;"></i></a>&nbsp;
+										<a href="" ><i class="fas fa-trash-alt fa-2x" style="color:#C10000;"></i></a>
 									</td>
 								</tr>
-								@endforeach
+                                <tr>
+									<td>									
+										Empresas S.A.S										
+									</td>
+									<td>
+                                        Proveedor 2                                   
+                                    </td>									
+									<td colspan="2">
+										<a href="""><i class="fas fa-pencil-alt fa-2x" style="color:#18A4B4;"></i></a>&nbsp;
+										<a href="" ><i class="fas fa-trash-alt fa-2x" style="color:#C10000;"></i></a>
+									</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>

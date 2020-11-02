@@ -118,20 +118,15 @@ Route::get('edit_parm_producto/{id}', 'Parametrizacion\ProductoController@edit')
 Route::post('update_parm_producto/{id}', 'Parametrizacion\ProductoController@update');
 Route::get('delete_parm_producto/{id}', 'Parametrizacion\ProductoController@destroy');
 
-<<<<<<< Updated upstream
 // parametrizacion calificacion de proveedores
 Route::get('calificacion_proveedores', function () {
     return view('pages.parametrizacion.calificacion_proveedor.calificacion_proveedor');
 });
 
-=======
 // Parametrizacion Proveedores
-Route::get('parm_proveedor', 'Parametrizacion\ProveedorController@index');
-Route::post('store_parm_proveedor', 'Parametrizacion\ProveedorController@store');
-Route::get('edit_parm_proveedor/{id}', 'Parametrizacion\ProveedorController@edit');
-Route::post('update_parm_prodveedor/{id}', 'Parametrizacion\ProveedorController@update');
-Route::get('delete_parm_proveedor/{id}', 'Parametrizacion\ProveedorController@destroy');
->>>>>>> Stashed changes
+Route::get('parm_proveedor', function () {
+    return view('pages.parametrizacion.proveedor');
+});
 
 // Menu contexto
 Route::get('contexto_index','Contexto\ContextoController@index');
