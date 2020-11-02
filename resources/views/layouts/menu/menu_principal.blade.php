@@ -116,7 +116,7 @@
         </li><!-- br-menu-item -->
          <li class="br-menu-item">
           <a href="#" class="br-menu-link with-sub">
-            <img src="{{ asset('image/undraw_online_messaging_9ro6.svg') }}" alt="" width="40" height="40">
+           <i class="menu-item-icon  ion-clipboard tx-24"></i>
             <span class="menu-item-label">Mejora</span>
           </a><!-- br-menu-link -->
           <ul class="br-menu-sub">
