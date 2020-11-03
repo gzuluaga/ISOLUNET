@@ -118,14 +118,19 @@ Route::get('edit_parm_producto/{id}', 'Parametrizacion\ProductoController@edit')
 Route::post('update_parm_producto/{id}', 'Parametrizacion\ProductoController@update');
 Route::get('delete_parm_producto/{id}', 'Parametrizacion\ProductoController@destroy');
 
-// parametrizacion calificacion de proveedores
-Route::get('calificacion_proveedores', function () {
-    return view('pages.parametrizacion.calificacion_proveedor.calificacion_proveedor');
-});
-
 // Parametrizacion Proveedores
 Route::get('parm_proveedor', function () {
     return view('pages.parametrizacion.proveedor');
+});
+
+// Identificación Criticidad
+Route::get('parm_criticidad', function () {
+    return view('pages.parametrizacion.criticidad');
+});
+
+// parametrizacion calificacion de proveedores
+Route::get('calificacion_proveedores', function () {
+    return view('pages.parametrizacion.calificacion_proveedor.calificacion_proveedor');
 });
 
 // Menu contexto
@@ -194,12 +199,14 @@ Route::post('indicadores/{id}','sgto_medicion\IndicadoresController@destroy');
 
 
 // Menu liderazgo 
-// presupuesto
-Route::get('presupuesto', function () {
-    return view('pages.liderazgo.presupuesto');
-});
+
 // politica
 Route::get('politica', function () {
     return view('pages.liderazgo.politica.politica');
+});
+
+// presupuesto
+Route::get('parm_presupuesto', function () {
+    return view('pages.liderazgo.presupuesto');
 });
 

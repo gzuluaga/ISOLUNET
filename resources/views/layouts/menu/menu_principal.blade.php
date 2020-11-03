@@ -16,24 +16,21 @@
           </a><!-- br-menu-link -->
           <ul class="br-menu-sub">
           
-            <li class="sub-item"><a href="{{ URL::to('control_ususarios/users') }}" class="sub-link">Usuarios</a></li>
-          
-          
-            <li class="sub-item"><a href="{{ route('Mod_Parametrizacion::parm_empresa') }}" class="sub-link">Empresas</a></li>
-          
-          
-            <li class="sub-item"><a href="{{ URL::to('parm_datos_corportativo') }}" class="sub-link">Datos Corporativos</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_areas') }}" class="sub-link">Areas</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_cargo') }}" class="sub-link">Cargos</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_usuarios') }}" class="sub-link">Usuarios Cliente</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_proceso') }}" class="sub-link">Procesos</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_documento_index') }}" class="sub-link">Documentos</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_sistema_gestion') }}" class="sub-link">Sistema de Gestión</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_usuarios_camb') }}" class="sub-link">Cambiar Usuario-Empresa</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_origen_anomalia') }}" class="sub-link">Origen de anomalÍa</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_proveedor') }}" class="sub-link">Proveedores</a></li>
-            <li class="sub-item"><a href="{{ URL::to('parm_producto') }}" class="sub-link">Productos</a></li>
-            <li class="sub-item"><a href="{{ URL::to('calificacion_proveedores') }}" class="sub-link">Calificacion Proveedor</a></li>
+            <li class="sub-item"><a href="{{ URL::to('control_ususarios/users') }}"         class="sub-link">Usuarios</a></li>          
+            <li class="sub-item"><a href="{{ route('Mod_Parametrizacion::parm_empresa') }}" class="sub-link">Empresas</a></li>          
+            <li class="sub-item"><a href="{{ URL::to('parm_datos_corportativo') }}"         class="sub-link">Datos Corporativos</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_areas') }}"                      class="sub-link">Areas</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_cargo') }}"                      class="sub-link">Cargos</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_usuarios') }}"                   class="sub-link">Usuarios Cliente</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_proceso') }}"                    class="sub-link">Procesos</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_documento_index') }}"            class="sub-link">Documentos</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_sistema_gestion') }}"            class="sub-link">Sistema de Gestión</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_usuarios_camb') }}"              class="sub-link">Cambiar Usuario-Empresa</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_origen_anomalia') }}"            class="sub-link">Origen de anomalÍa</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_proveedor') }}"                  class="sub-link">Proveedores</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_producto') }}"                   class="sub-link">Productos</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_criticidad') }}"                 class="sub-link">Identificar Criticidad</a></li>
+            <li class="sub-item"><a href="{{ URL::to('calificacion_proveedores') }}"        class="sub-link">Calificacion Proveedor</a></li>
           
           </ul>
         </li>
@@ -43,10 +40,10 @@
             <span class="menu-item-label">Contexto</span>
           </a><!-- br-menu-link -->
           <ul class="br-menu-sub">
-            <li class="sub-item"><a href="{{ URL::to('contexto_index') }}" class="sub-link">Contexto</a></li>
-            <li class="sub-item"><a href="{{ URL::to('partes_interesadas') }}" class="sub-link">Partes Interesadas</a></li>
-            <li class="sub-item"><a href="{{ URL::To('alcance') }}" class="sub-link">Alcance</a></li>
-            <li class="sub-item"><a href="{{ URL::to('mapa_proceso') }}" class="sub-link">Procesos</a></li>
+            <li class="sub-item"><a href="{{ URL::to('contexto_index') }}"      class="sub-link">Contexto</a></li>
+            <li class="sub-item"><a href="{{ URL::to('partes_interesadas') }}"  class="sub-link">Partes Interesadas</a></li>
+            <li class="sub-item"><a href="{{ URL::To('alcance') }}"             class="sub-link">Alcance</a></li>
+            <li class="sub-item"><a href="{{ URL::to('mapa_proceso') }}"        class="sub-link">Procesos</a></li>
           </ul>
         </li><!-- br-menu-item -->
         <li class="br-menu-item">
@@ -55,14 +52,15 @@
             <span class="menu-item-label">Liderazgo</span>
           </a><!-- br-menu-link -->
           <ul class="br-menu-sub">
-            <li class="sub-item"><a href="{{ URL::to('politica') }}" class="sub-link">Politica</a></li>
-            <li class="sub-item"><a href="" class="sub-link">Roles y Responsabilidades</a></li>
-            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Competencia</a></li> --}}
-            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Diciplina</a></li> --}}
-            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link"> Notas de Curso</a></li> --}}
-            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link">Llamadas de Atenciaon</a></li> --}}
-            {{-- <li class="sub-item"><a href="navigation.html" class="sub-link">Hoja de Vida del Estudante</a></li> --}}
-          </ul>
+            <li class="sub-item"><a href="{{ URL::to('politica') }}"          class="sub-link">Politica</a></li>
+            <li class="sub-item"><a href=""                                   class="sub-link">Roles y Responsabilidades</a></li>
+            <li class="sub-item"><a href="{{ URL::to('parm_presupuesto') }}"  class="sub-link">Presupuesto</a></li>
+            {{-- <li class="sub-item"><a href="navigation.html"               class="sub-link"> Notas de Competencia</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html"               class="sub-link"> Notas de Diciplina</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html"               class="sub-link"> Notas de Curso</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html"               class="sub-link">Llamadas de Atenciaon</a></li> --}}
+            {{-- <li class="sub-item"><a href="navigation.html"               class="sub-link">Hoja de Vida del Estudante</a></li> --}}
+          </ul>       
         </li><!-- br-menu-item -->
         <li class="br-menu-item">
           <a href="#" class="br-menu-link with-sub">
